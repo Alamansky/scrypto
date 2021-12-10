@@ -7,7 +7,7 @@ Scrypto is a CLI tool for checking real-time cryptocurrency conversion rates usi
 ```
 $ git clone https://github.com/Alamansky/scrypto.git
 ```
-2. Navigate to project root directory and install node modules
+2. Navigate to project root directory and install node modules.
 ```
 $ cd scrypto
 
@@ -46,7 +46,7 @@ $ scrypto check
 
 NOTE: all user inputs must be ISO 4217 codes (e.g. USD, CAD)
 
-To see the current price of Ethereum in Indian Rupees:
+**Example 1: check the current price of Ethereum in Indian Rupees:**
 
 ```
 $ scrypto check price --coin ETH, --cur INR
@@ -57,9 +57,9 @@ Output:
 Coin: ETH (Ethereum) | Price: ₹311,636.02
 ```
 
-The `--coin` option can accept multiple values if the cryptocurrency codes are entered in csv format.
+**Example 2: check the current prices of Ada and Solana in Euros:**
 
-To see the current prices of Ada and Solana in Euros:
+The `--coin` option can accept multiple values if the cryptocurrency codes are entered in csv format.
 
 ```
 $ scrypto check price --coin ADA,SOL --cur EUR
