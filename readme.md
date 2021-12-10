@@ -37,25 +37,31 @@ $ scrypto check
 | price | --coin, --cur | displays cryptocurrency to fiat currency conversion rates for the cryptocurrency specified by the `--coin` option and the fiat currency specified by the `--cur` option (if neither option is specified, default is BTC to USD).
 
 ## Example Usage
+
+NOTE: all user inputs must be ISO 4217 codes (e.g. USD, CAD)
+
+To see the current price of Ethereum in Indian Rupees:
+
 ```
-// NOTE: all user inputs must be ISO 4217 codes (e.g. USD, CAD)
-
-// see the current price of Ethereum in Indian Rupees
-
 $ scrypto check price --coin ETH, --cur INR
+```
 
-// output:
-// Coin: ETH (Ethereum) | Price: ₹311,636.02
+Output:
+```
+Coin: ETH (Ethereum) | Price: ₹311,636.02
+```
 
----
+The `--coin` option can accept multiple values if the cryptocurrency codes are entered in csv format.
 
-// see the current price of Ada and Solana in Euros
-// (multiple cryptos must be formatted as csv)
+To see the current prices of Ada and Solana in Euros:
 
+```
 $ scrypto check price --coin ADA,SOL --cur EUR
+```
 
-// output:
-// Coin: SOL (Solana) | Price: €161.77
-// Coin: ADA (Cardano) | Price: €1.15 
+Output:
+```
+Coin: SOL (Solana)  | Price: €161.77
+Coin: ADA (Cardano) | Price: €1.15 
 
 ```
