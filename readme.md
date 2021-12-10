@@ -3,17 +3,23 @@
 Scrypto is a CLI tool for checking real-time cryptocurrency conversion rates using the Nomics API.
 
 ## Installation
-1. Clone repo to machine
+1. Clone repo to machine.
 ```
 $ git clone https://github.com/Alamansky/scrypto.git
 ```
-2. In the root directory, run `npm link` in the terminal.
+2. Navigate to project root directory and install node modules
+```
+$ cd scrypto
+
+$ npm install
+```
+3. In the root directory, run command `npm link` in the terminal.
 ```
 $ npm link
 ```
-3. Scrypto can now be called with the `scrypto` command; run `scrypto key set` to be prompted for the required Nomics API key.
-4. Enter your key (you can obtain one [here](https://p.nomics.com/cryptocurrency-bitcoin-api)).
-5. You can now use Scrypto on your local machine.
+4. Scrypto can now be called with the `scrypto` command; run `scrypto key set` to be prompted for the required Nomics API key.
+5. Enter your key (you can obtain one [here](https://p.nomics.com/cryptocurrency-bitcoin-api)).
+6. You can now use Scrypto on your local machine.
 
 ## API
 Commands:
